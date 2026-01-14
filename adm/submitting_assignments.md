@@ -1,4 +1,4 @@
-# Submitting assignments usign GitHub
+# Submitting assignments using GitHub
 
 In this course, programming assignments (and also some other assignments) are submitted using **GitHub**. 
 
