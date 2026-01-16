@@ -77,7 +77,7 @@ Students **must** add the instructor and all TAs as collaborators.
 
 - **Instructor**: `eraldoribeiro`
 - **Teaching Assistants**:
-  - `<TA1_GITHUB_USERNAME>`
+  - `hatemphd`
 
 > ⚠️ Repositories without correct collaborator access **will not be graded**.
 
