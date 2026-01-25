@@ -1,19 +1,24 @@
-# Submitting assignments using GitHub
+# Submitting Assignments Using GitHub (CSE4001)
 
-In this course, programming assignments (and also some other assignments) are submitted using **GitHub**. 
+In this course, programming assignments are submitted using **GitHub**.
+
+------
 
 ## 1. Submission platform
 
 All assignments must be submitted via **GitHub repositories**.
 
 - Each student (or team for group assignments) submits **one private repository per assignment**
-- ZIP files, screenshots-only submissions, or email submissions are **not accepted**.
+- ZIP files, screenshots-only submissions, or email submissions are **not accepted**
 
 ------
 
-## 2. Repository creation
+## 2. Repository creation (REQUIRED)
 
 For each assignment, students must create a **new private GitHub repository** under their personal GitHub account.
+
+> ⚠️ **Important:** Git does *not* create GitHub repositories automatically.
+>  You must create the repository on GitHub **before** pushing code.
 
 ### Repository naming convention
 
@@ -21,7 +26,7 @@ For each assignment, students must create a **new private GitHub repository** un
 cse4001-<assignment-name>-<netid>
 ```
 
-Here, `<netid>` is the student's FIT tracks username. 
+- `<netid>` is your FIT Tracks username
 
 **Example**
 
@@ -32,27 +37,28 @@ cse4001-os161-install-jdoe2026
 ### Repository requirements
 
 - Visibility: **Private**
-- Initialized with a `README.md`
+- Initialize with a `README.md`
 - Contains only files relevant to the assignment
 
 ------
 
-## 3. Starter code procedure
-
-When starter code is provided:
+## 3. Starter code procedure (when provided)
 
 ❌ **Do NOT fork** the assignment repository
+ ❌ **Do NOT submit a forked repository**
 
-❌ **Do NOT submit a forked repository**
+Instead:
 
-Instead, students must:
+1. Clone the starter repository
+2. Create your **own private repository** on GitHub (Follow the name convension: `cse4001-<assignment-name>-<netid>`)
+4. Copy the starter files into your repository
+5. Commit the starter code as an initial commit
 
-1. Clone or download the starter repository
-2. Create a **new private repository**
-3. Copy the starter files into the new repository
-4. Commit the code as an initial commit
+------
 
-### Recommended Git workflow
+## 4. Recommended Git workflow
+
+Run the following **after creating your private repository on GitHub**:
 
 ```
 git clone https://github.com/<course-org>/<assignment-starter>.git
@@ -63,33 +69,34 @@ git init
 git add .
 git commit -m "Initial commit from assignment starter code"
 git branch -M main
-git remote add origin https://github.com/<username>/cse4001-<assignment>-<netid>.git
+git remote add origin https://github.com/<username>/cse4001-<assignment-name>-<netid>.git
 git push -u origin main
 ```
 
+If prompted for a password, use a **GitHub Personal Access Token** (not your GitHub password).
+
 ------
 
-## 4. Collaborators (required)
+## 5. Collaborators (REQUIRED)
 
 Students **must** add the instructor and all TAs as collaborators.
 
 ### Required collaborators
 
-- **Instructor**: `eraldoribeiro`
-- **Teaching Assistants**:
-  - `hatemphd`
+- **Instructor:** `eraldoribeiro`
+- **Teaching Assistant:** `hatemphd`
 
 > ⚠️ Repositories without correct collaborator access **will not be graded**.
 
 ------
 
-## 5. Assignment content requirements
+## 6. Assignment content requirements
 
 Each repository must include:
 
 - ✅ All required source code
-- ✅ Any required screenshots or logs (PNG/JPG/TXT)
-- ✅ A completed `README.md` with:
+- ✅ Required screenshots or logs (PNG / JPG / TXT)
+- ✅ A completed `README.md` containing:
   - Student name
   - NetID
   - Assignment description
@@ -119,9 +126,9 @@ Brief description of the assignment.
 
 ------
 
-## 6. Submitting the assignment
+## 7. Submitting the assignment
 
-On **Canvas**, students must submit **only** the URL of the repository, e.g.:
+On **Canvas**, submit **only** the URL of your GitHub repository:
 
 ```
 https://github.com/<username>/cse4001-<assignment-name>-<netid>
@@ -131,42 +138,39 @@ No additional uploads unless explicitly requested.
 
 ------
 
-## 7. Deadlines & late policy
+## 8. Deadlines & late policy
 
-- The **timestamp of the last commit pushed** before the deadline determines submission time
+- Submission time is determined by the **timestamp of the last pushed commit**
 - Late submissions follow the course late policy
 
 ------
 
-## 8. Academic integrity
+## 9. Academic integrity
 
 - All submitted work must be **your own**
-- Sharing repositories or making them public is prohibited
+- Repositories must remain **private**
 - Standard university academic integrity policies apply
 
 ------
 
-## 9. Common reasons assignments are not graded
+## 10. Common reasons assignments are not graded
 
 - Repository is public
-- Instructor or TAs not added as collaborators
+- Instructor or TA not added as collaborator
 - Incorrect repository name
 - Forked repository submitted
-- No README or missing required files
+- Missing README or required files
 - Work not pushed before the deadline
 
 ------
 
-## 10. Final submission checklist
+## 11. Final submission checklist
 
 - [ ]  Repository name is correct
 - [ ]  Repository is private
-- [ ]  Instructor and TAs added
+- [ ]  Instructor and TA added
 - [ ]  Code builds and runs
 - [ ]  README completed
 - [ ]  All changes pushed
 
-------
-
-
- 
+## 
