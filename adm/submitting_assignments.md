@@ -153,7 +153,7 @@ No additional uploads unless explicitly requested.
 
 ------
 
-## 10. Common reasons assignments are not graded
+## 10. Common reasons assignments will suffer deductions in grade
 
 - Repository is public
 - Instructor or TA not added as collaborator
