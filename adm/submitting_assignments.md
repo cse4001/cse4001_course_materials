@@ -49,31 +49,27 @@ cse4001-os161-install-jdoe2026
 
 Instead:
 
-1. Clone the starter repository
-2. Create your **own private repository** on GitHub (Follow the name convension: `cse4001-<assignment-name>-<netid>`)
-4. Copy the starter files into your repository
-5. Commit the starter code as an initial commit
+1. Create your **own private repository** on GitHub.com (Follow the name convension: `cse4001-<assignment-name>-<netid>`)
+2. **After creating your private repository on GitHub**:, run the following:
+   ```
+   git clone https://github.com/<course-org>/<assignment-starter>.git
+   cd <assignment-starter>
+   rm -rf .git
+   
+   git init
+   git add .
+   git commit -m "Initial commit from assignment starter code"
+   git branch -M main
+   git remote add origin https://github.com/<username>/cse4001-<assignment-name>-<netid>.git
+   git push -u origin main
+   ```
+   If prompted for a password, use a **GitHub Personal Access Token** (not your GitHub password).
 
-------
+3. Now, the starter files and directories should be committed/pushed to your own private repository for the assignment. 
+4. Reload the private repository page (GitHub.com) to see that the new files.
+5. Clone your private repository to create a local copy of the private repository on your local machine. To complete the assignment, you will work on the files in this local repository and then commit/push the files to the GitHub server to submit the assignment. 
 
-## 4. Recommended Git workflow
 
-Run the following **after creating your private repository on GitHub**:
-
-```
-git clone https://github.com/<course-org>/<assignment-starter>.git
-cd <assignment-starter>
-rm -rf .git
-
-git init
-git add .
-git commit -m "Initial commit from assignment starter code"
-git branch -M main
-git remote add origin https://github.com/<username>/cse4001-<assignment-name>-<netid>.git
-git push -u origin main
-```
-
-If prompted for a password, use a **GitHub Personal Access Token** (not your GitHub password).
 
 ------
 
@@ -104,6 +100,8 @@ Each repository must include:
   - Notes or assumptions
 
 ### README template
+
+Add the following information to the existing README.md file:
 
 ```
 # CSE4001 – Assignment <N>
