@@ -50,7 +50,18 @@ cse4001-os161-install-jdoe2026
 Instead:
 
 1. Create your **own private repository** on GitHub.com (Follow the name convension: `cse4001-<assignment-name>-<netid>`)
-2. **After creating your private repository on GitHub**:, run the following:
+2. Start the CSE4001 container:
+   ```shell
+     docker start -i cse4001
+   ```
+   If the container fails to start, make sure the container is running by calling the docker run command. For details see notes: https://github.com/eraldoribeiro/UsingCSE4001_OS161/blob/main/RunningOS161_DockerDesktop.md
+
+3. You should now be running the CSE4001 Container terminal. Go to the shared directory `/root/workspace/` in the CSE4001 container.
+   ```shell
+   cd /root/workspace/
+   ```
+
+4. Run the following:
    ```
    git clone https://github.com/<course-org>/<assignment-starter>.git
    cd <assignment-starter>
@@ -65,9 +76,10 @@ Instead:
    ```
    If prompted for a password, use a **GitHub Personal Access Token** (not your GitHub password).
 
-3. Now, the starter files and directories should be committed/pushed to your own private repository for the assignment. 
-4. Reload the private repository page (GitHub.com) to see that the new files.
-5. Clone your private repository to create a local copy of the private repository on your local machine. To complete the assignment, you will work on the files in this local repository and then commit/push the files to the GitHub server to submit the assignment. 
+5. Now, the starter files and directories should be committed/pushed to your own private repository for the assignment. 
+6. Reload the private repository page (GitHub.com) to see that the new files.
+7. Clone your private repository to create a local copy of the private repository on your local machine. To complete the assignment, you will work on the files in this local repository and then commit/push the files to the GitHub server to submit the assignment.
+8. Remove the original repository of the starter code to avoid confusing it with your private repository for the assignment. 
 
 
 
