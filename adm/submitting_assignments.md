@@ -74,7 +74,7 @@ Instead:
    git remote add origin https://github.com/<username>/cse4001-<assignment-name>-<netid>.git
    git push -u origin main
    ```
-   If prompted for a password, use a **GitHub Personal Access Token** (not your GitHub password).
+   If prompted for a password, use a ⚠️**GitHub Personal Access Token** (not your GitHub password)⚠️.
 
 5. Reload the private repository page (GitHub.com) to see that the new files.
 6. Clone your private repository to create a local copy of the private repository on your local machine. To complete the assignment, you will work on the files in this local repository and then commit/push the files to the GitHub server to submit the assignment.
