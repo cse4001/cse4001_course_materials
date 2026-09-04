@@ -84,6 +84,30 @@ Instead:
 
 ------
 
+## 4. Doing all of this with a script (optional)
+
+The helper script [`cse4001_submit.py`](cse4001_submit.py) performs the steps in
+section 3 for you and then checks your repository against the checklist in
+section 11 -- repository name, private visibility, fork status, collaborators,
+the `README.md` header, and whether everything has been committed and pushed.
+
+```shell
+python3 cse4001_submit.py setup --assignment <assignment-name> --netid <netid> --starter <starter-repo-url>
+```
+
+Afterwards, each time you want to submit new work:
+
+```shell
+python3 cse4001_submit.py submit -m "what you changed"
+```
+
+See [using_the_submit_script.md](using_the_submit_script.md) for the full
+instructions. Using the script is optional -- the steps above work exactly the
+same way when you type them yourself, and you are responsible for the result
+either way.
+
+------
+
 ## 5. Collaborators (REQUIRED)
 
 Students **must** add the instructor and all TAs as collaborators.
