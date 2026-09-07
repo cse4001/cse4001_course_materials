@@ -1,29 +1,19 @@
 <div style="font-family:Lato,'Helvetica Neue',Helvetica,Arial,sans-serif;max-width:960px;color:#1a1a1a;line-height:1.5;">
 
-<p style="font-size:15px;margin-top:0;">This is the sign-up for the <strong>group talk</strong>, which is worth
-<strong>15%</strong> of your grade. It is a <strong>group assignment</strong>:
-<strong>one member submits on behalf of the whole team</strong>, and Canvas records that submission for
-every member automatically. Do not submit separately &mdash; duplicate submissions from the same team
-will be treated as one.</p>
+<p style="font-size:15px;margin-top:0;">This is the sign-up for the <strong>group talk</strong> (
+<strong>15%</strong> of the overall grade). It is a <strong>group assignment</strong>:
+<strong>one member submits on behalf of the whole team</strong>. Do not submit separately.</p>
 
 <p style="font-size:15px;">Join your team under <strong>People &rarr; CSE4001 Group Talks</strong> first.
-Teams are <strong>4</strong> students. There are 32 of you, so there are
-<strong>8 teams and 8 talk slots</strong> &mdash; every team gives exactly one talk, and every slot is taken.
-<strong>Due Thu Sep 10 (Week 4).</strong> The first talk is <strong>Thu Sep 24</strong>, so this deadline is
-what gives that team two weeks to prepare.</p>
+Teams are <strong>4</strong> students. 
+<strong>Due Thu Sep 10 (Week 4).</strong> The first talk is <strong>Thu Sep 24</strong>.</p>
 
-<h2 style="font-family:Lato,'Helvetica Neue',Helvetica,Arial,sans-serif;color:#9E1B32;font-size:19px;font-weight:700;margin:28px 0 4px;padding-bottom:5px;border-bottom:1.5px solid #9E1B32;">What is already decided, and what is yours</h2>
+<h2 style="font-family:Lato,'Helvetica Neue',Helvetica,Arial,sans-serif;color:#9E1B32;font-size:19px;font-weight:700;margin:28px 0 4px;padding-bottom:5px;border-bottom:1.5px solid #9E1B32;">Topics and dates</h2>
 
-<p style="font-size:15px;">The <strong>topic and the date are fixed</strong> &mdash; each talk sits in the week whose
-lecture covers it, so the class already has the concept in hand when you present. What you choose is
-<strong>which slot you want</strong> and, more importantly, <strong>the second operating system</strong>.
-The second system in the table below is a suggestion. Propose a different one if you have a better
-comparison in mind, and say why.</p>
+<p style="font-size:15px;">The <strong>topic and the date are fixed</strong>. Teams choose 
+<strong>the slot</strong> and, more importantly, <strong>the second operating system</strong>.
+The second system in the table below is a suggestion. Propose a different one if you want.</p>
 
-<p style="font-size:15px;">Two systems solving the same problem differently is evidence that a real design
-decision was made. Your job is to find that decision and say what each system is optimizing for and what it
-gives up. Pick a second system whose source you can actually read or whose behaviour you can actually
-measure &mdash; not one you can only read about.</p>
 
 <h2 style="font-family:Lato,'Helvetica Neue',Helvetica,Arial,sans-serif;color:#9E1B32;font-size:19px;font-weight:700;margin:28px 0 4px;padding-bottom:5px;border-bottom:1.5px solid #9E1B32;">The eight slots</h2>
 
@@ -91,8 +81,7 @@ measure &mdash; not one you can only read about.</p>
 <h2 style="font-family:Lato,'Helvetica Neue',Helvetica,Arial,sans-serif;color:#9E1B32;font-size:19px;font-weight:700;margin:28px 0 4px;padding-bottom:5px;border-bottom:1.5px solid #9E1B32;">What to submit</h2>
 
 <p style="font-size:15px;">Copy the lines below into the text box and type your answers after each
-label. <strong>Keep the labels exactly as they are</strong> &mdash; I read these in bulk, and the fixed
-format is what makes that possible.</p>
+label. <strong>Keep the labels exactly as they are</strong>.</p>
 
 <p style="font-size:13px;font-weight:700;color:#4A4A4A;margin:18px 0 0;letter-spacing:.03em;">COPY THIS</p>
 <pre style="font-family:Menlo,Consolas,'Courier New',monospace;font-size:13px;line-height:1.6;white-space:pre-wrap;overflow-x:auto;padding:14px 16px;margin:8px 0 0;background:#F6F6F6;border-left:3px solid #9E1B32;">Team name:
@@ -104,11 +93,7 @@ Third choice:
 
 Second system:
 
-Why this comparison:
-
-How you will show the mechanism:
-
-Questions:</pre>
+</pre>
 
 <p style="font-size:13px;font-weight:700;color:#4A4A4A;margin:18px 0 0;letter-spacing:.03em;">A FILLED-IN EXAMPLE</p>
 <pre style="font-family:Menlo,Consolas,'Courier New',monospace;font-size:13px;line-height:1.6;white-space:pre-wrap;overflow-x:auto;padding:14px 16px;margin:8px 0 0;background:#F6F6F6;border-left:3px solid #9E1B32;">Team name: Zone Allocator
@@ -120,19 +105,7 @@ Third choice: 5 (Avoiding locks entirely)
 
 Second system: illumos/SunOS slab allocator, not FreeBSD UMA.
 
-Why this comparison:
-Bonwick's slab allocator is the design Linux adopted, so comparing Linux slab
-against the original is a comparison between an idea and its reimplementation
-rather than between two unrelated designs. We want to show what Linux changed
-when it borrowed the idea, and why -- per-CPU caching in particular.
-
-How you will show the mechanism:
-Read the struct definitions in both trees side by side. On Linux we will run
-slabtop in the course container and watch a cache grow while we allocate, so
-the class sees the object counts move rather than just a diagram.
-
-Questions:
-Is the illumos source close enough to the original SunOS code to be fair?</pre>
+</pre>
 
 <p style="font-size:14px;color:#4A4A4A;margin-top:10px;">The team above is invented, so do not propose it.
 It is here to show the level of detail expected.</p>
@@ -149,44 +122,23 @@ It is here to show the level of detail expected.</p>
 <tbody>
 <tr>
 <td style="padding:7px 8px;vertical-align:top;border-bottom:1px solid #D8D8D8;">Team name</td>
-<td style="padding:7px 8px;vertical-align:top;border-bottom:1px solid #D8D8D8;">Your Canvas group name, so I can match this to the group set.</td>
+<td style="padding:7px 8px;vertical-align:top;border-bottom:1px solid #D8D8D8;">Your Canvas group name.</td>
 </tr>
 <tr>
 <td style="padding:7px 8px;vertical-align:top;border-bottom:1px solid #D8D8D8;">Members</td>
-<td style="padding:7px 8px;vertical-align:top;border-bottom:1px solid #D8D8D8;">Full names of all four members, including yourself.</td>
+<td style="padding:7px 8px;vertical-align:top;border-bottom:1px solid #D8D8D8;">Full names of all four members.</td>
 </tr>
 <tr>
 <td style="padding:7px 8px;vertical-align:top;border-bottom:1px solid #D8D8D8;">First / Second / Third choice</td>
-<td style="padding:7px 8px;vertical-align:top;border-bottom:1px solid #D8D8D8;">Three different talk numbers, in order of preference. Give me three real choices &mdash; if two teams want the same slot I need somewhere to move one of you.</td>
+<td style="padding:7px 8px;vertical-align:top;border-bottom:1px solid #D8D8D8;">Three different talk numbers, in order of preference.</td>
 </tr>
 <tr>
 <td style="padding:7px 8px;vertical-align:top;border-bottom:1px solid #D8D8D8;">Second system</td>
-<td style="padding:7px 8px;vertical-align:top;border-bottom:1px solid #D8D8D8;">Write <em>as suggested</em> if you are taking the one in the table. Otherwise name the system you want to compare against instead. This answer applies to your first choice; if I move you to another slot I will ask you again.</td>
-</tr>
-<tr>
-<td style="padding:7px 8px;vertical-align:top;border-bottom:1px solid #D8D8D8;">Why this comparison</td>
-<td style="padding:7px 8px;vertical-align:top;border-bottom:1px solid #D8D8D8;">Two or three sentences. What design decision do you expect to find, and what do you think each system is optimizing for? A guess is fine at this stage &mdash; being wrong later is not a problem, having no expectation is.</td>
-</tr>
-<tr>
-<td style="padding:7px 8px;vertical-align:top;border-bottom:1px solid #D8D8D8;">How you will show the mechanism</td>
-<td style="padding:7px 8px;vertical-align:top;border-bottom:1px solid #D8D8D8;">Name the source tree, the tool, or the measurement. The talk needs something concrete &mdash; a source excerpt you can explain, a data structure, a measurement you ran, or a demonstration in the container. Say which one you are aiming for and whether you can already get at it.</td>
-</tr>
-<tr>
-<td style="padding:7px 8px;vertical-align:top;border-bottom:1px solid #D8D8D8;">Questions</td>
-<td style="padding:7px 8px;vertical-align:top;border-bottom:1px solid #D8D8D8;">Anything you want me to answer before you start. Leave it blank if you have none.</td>
+<td style="padding:7px 8px;vertical-align:top;border-bottom:1px solid #D8D8D8;">Write <em>as suggested</em> if you are taking the one in the table. Otherwise name the system you want to compare against instead.</td>
 </tr>
 </tbody>
 </table>
 
-<h2 style="font-family:Lato,'Helvetica Neue',Helvetica,Arial,sans-serif;color:#9E1B32;font-size:19px;font-weight:700;margin:28px 0 4px;padding-bottom:5px;border-bottom:1.5px solid #9E1B32;">How slots are assigned</h2>
 
-<p style="font-size:15px;">Eight teams, eight slots, so this is a matching problem and not a race. I honour first
-choices wherever they do not collide, and use your second and third choices to break ties. I will post the
-final assignment <strong>by Tue Sep 15 (Week 5)</strong>, together with a yes or no on any second system you
-proposed.</p>
-
-<p style="font-size:15px;">If you have not joined a group by the deadline, I will place you in one and assign
-your slot. If you would rather present early and get it out of the way, say so &mdash; the early slots are
-usually the ones nobody asks for, and taking one is doing the rest of the class a favour.</p>
 
 </div>
